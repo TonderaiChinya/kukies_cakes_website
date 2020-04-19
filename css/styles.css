@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  .logo{
+      padding: 20px;
+      height: 90px;
+      width: 95px;
+  }
+
+  .navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    padding: 3px;
+    padding-right: 20px;
+
+
+  }
+
+  h3{
+      font-family: 'Dancing Script', cursive;
+      color: darkmagenta;
+      font-weight: lighter;
+  }
+  .main_content > div > img{
+    height: 250px;
+    width: 100%;
+  }
+  .main_content > div{
+    height: auto;
+  }
+
+  .main_content{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h5,p{
+    font-family: 'Cookie', cursive;
+  }
+  
+  h5{
+      font-size: 36px;
+  }
+  p{
+      font-size: 22px;
+  }

@@ -7,15 +7,21 @@
 }
 
 .logo {
-  /* padding: 20px; */
-  height: 90px;
-  width: 95px;
+  /* padding: 10px; */
+  /* height: 70px; */
+  width: 65px;
 }
 
-.navbar-brand {
+.navbar-brand h3 {
   font-family: "Dancing Script", cursive;
-  font-size: 40px;
+  font-size: 30px;
   color: darkmagenta;
+  /* padding: 3px; */
+  /* padding-right: 20px; */
+}
+.navbar-brand h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
   /* padding: 3px; */
   /* padding-right: 20px; */
 }
@@ -28,38 +34,49 @@ nav {
   z-index: -1;
 }
 .overlay {
-  background-color: #000;
-  opacity: 0.9;
-  z-index: 3;
+  border-bottom: 3px solid darkmagenta;
 }
-h3 {
-  font-family: "Dancing Script", cursive;
-  color: darkmagenta;
-  font-weight: lighter;
+#main {
+  background: url(../media/background1.jpeg) no-repeat;
+  background-size: cover;
+  /* overflow: hidden; */
 }
-.main_content > div > img {
-  height: 250px;
-  width: 100%;
-}
-.main_content > div {
-  height: auto;
-}
-
+/* welcome page */
 .main_content {
-  display: flex;
-  justify-content: space-evenly;
+  margin-top: 5%;
+  padding: 0.5rem;
+  color: #fff;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "advert1 advert2 advert3"
+    "advert4 advert5 advert6";
+  grid-template-columns: repeat(3, 1fr);
 }
 
-h5,
-p {
-  font-family: "Cookie", cursive;
+.main_content .advert-1 {
+  grid-area: advert1;
 }
-
-h5 {
-  font-size: 36px;
+.main_content .advert-2 {
+  grid-area: advert2;
 }
-p {
-  font-size: 22px;
+.main_content .advert-3 {
+  grid-area: advert3;
+}
+.main_content .advert-4 {
+  grid-area: advert4;
+}
+.main_content .advert-5 {
+  grid-area: advert5;
+}
+.main_content .advert-6 {
+  grid-area: advert6;
+}
+.main_content .advert {
+  background: #404040;
+  opacity: 0.8;
+  padding: 0.5rem;
+  border-bottom: lime 5px solid;
 }
 
 /* Birthday cakes */
@@ -93,4 +110,13 @@ p {
 .frame-2x3 img {
   max-width: 200px;
   max-height: 300px;
+}
+
+/* footer */
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darkmagenta;
+  color: #fff;
+  height: 60px;
 }

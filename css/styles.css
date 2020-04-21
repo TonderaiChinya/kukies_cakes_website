@@ -25,6 +25,7 @@
   /* padding: 3px; */
   /* padding-right: 20px; */
 }
+
 nav {
   border-bottom: 3px solid lime;
 }
@@ -33,54 +34,21 @@ nav {
   width: 100%;
   z-index: -1;
 }
-.overlay {
-  border-bottom: 3px solid darkmagenta;
-}
+/* .overlay {
+  background-color: #000;
+  opacity: 0.8;
+} */
+
+/* welcome page */
 #main {
+  height: calc(100vh-60px);
   background: url(../media/background1.jpeg) no-repeat;
   background-size: cover;
-  /* overflow: hidden; */
-}
-/* welcome page */
-.main_content {
-  margin-top: 5%;
-  padding: 0.5rem;
-  color: #fff;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "advert1 advert2 advert3"
-    "advert4 advert5 advert6";
-  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
 }
 
-.main_content .advert-1 {
-  grid-area: advert1;
-}
-.main_content .advert-2 {
-  grid-area: advert2;
-}
-.main_content .advert-3 {
-  grid-area: advert3;
-}
-.main_content .advert-4 {
-  grid-area: advert4;
-}
-.main_content .advert-5 {
-  grid-area: advert5;
-}
-.main_content .advert-6 {
-  grid-area: advert6;
-}
-.main_content .advert {
-  background: #404040;
-  opacity: 0.8;
-  padding: 0.5rem;
-  border-bottom: lime 5px solid;
-}
-
-/* Birthday cakes */
-.birthday {
+/* Gallery */
+#gallery {
   background: #5c1f5c;
 }
 .image {
@@ -112,11 +80,72 @@ nav {
   max-height: 300px;
 }
 
+/* About Page */
+#about {
+  background: url(../media/about_background.jpeg) no-repeat;
+  background-size: cover;
+}
+.about_content {
+  text-align: center;
+  color: #fff;
+}
+.about_content h1 {
+  font-size: 2rem;
+}
+.advert_content {
+  /* margin-top: 5%; */
+  padding: 0.5rem;
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "advert1 advert2 advert3"
+    "advert4 advert5 advert6";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.advert_content .advert-1 {
+  grid-area: advert1;
+}
+.advert_content .advert-2 {
+  grid-area: advert2;
+}
+.advert_content .advert-3 {
+  grid-area: advert3;
+}
+.advert_content .advert-4 {
+  grid-area: advert4;
+}
+.advert_content .advert-5 {
+  grid-area: advert5;
+}
+.advert_content .advert-6 {
+  grid-area: advert6;
+}
+.advert_content .advert {
+  background: #404040;
+  opacity: 0.8;
+  padding: 0.5rem;
+  border-bottom: lime 5px solid;
+}
 /* footer */
 #main-footer {
+  margin-top: 0;
   text-align: center;
   padding: 1rem;
   background: darkmagenta;
   color: #fff;
   height: 60px;
+}
+
+.social-icons i {
+  margin: 0 20px;
+  color: #fff;
+}
+.social-icons i:hover {
+  color: lime;
+  transition: all 0.2s ease-in;
+}
+.sig {
+  font-size: 12px;
 }

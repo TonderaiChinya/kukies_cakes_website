@@ -87,10 +87,39 @@ nav {
 }
 .about_content {
   text-align: center;
-  color: #fff;
+  align-content: center;
+  color: rgb(255, 255, 255);
 }
+.baker {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  max-width: 800px;
+  background: #404040;
+  opacity: 0.8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px rgba(16, 253, 8, 0.2);
+}
+.baker-image {
+  width: 200px;
+  height: 200px;
+  background: url(../media/thelma.JPG);
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin: 30px 20px 20px 0;
+}
+.baker p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  line-height: 22px;
+}
+
 .about_content h1 {
   font-size: 2rem;
+  font-weight: bolder;
 }
 .advert_content {
   /* margin-top: 5%; */

@@ -1,174 +1,89 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+<script
+src="https://kit.fontawesome.com/9e7d66c67f.js"
+crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="./css/home.css" />
+<link
+href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Lobster&display=swap"
+rel="stylesheet"
+/>
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<title>Kukies Cakes</title>
+</head>
+
+
+
+
+<header class="showcase">
+  <div class="content">
+    <img
+      src="./media/kukies logo.png"
+      class="logo"
+      alt="Kukies cakes logo"
     />
-    <script
-      src="https://kit.fontawesome.com/9e7d66c67f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Kukies Cakes</title>
-  </head>
-  <body>
-    <div id="main">
-      <!-- Navigation bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img class="logo" src="./media/kukies logo.png" alt="kukies logo" />
-        <a class="navbar-brand" href="#">
-          <h3>Kukies Cakes</h3>
-          <h5 class="motto">...mouth watering...</h5>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="title">
+      Welcome To Kukies Cakes
+    </div>
+    <div class="text">
+      ...mouth watering...
+    </div>
+  </div>
+</header>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Page</a>
-            </li>
+<!-- Services -->
+<section class="services">
+  <div class="container grid-3 center">
+    <div>
+        <a href="./gallery.html"> <i class="fa fa-picture-o fa-3x" ></i></a>
+       
+      <h3>Gallery</h3>
+      <p>
+       Explore our recent works and get an idea of what you can get
+      </p>
+    </div>
+    <div>
+      <i class="fas fa-chalkboard-teacher fa-3x"></i>
+      <h3>Courses</h3>
+      <p>
+       Are you keen to learn the secrets of baking?
+      </p>
+    </div>
+    <div>
+        <a href="./about.html"> <i class="fas fa-question fa-3x"></i></a>
+      <h3>About Us</h3>
+      <p>
+        Find out more about Kukies 
+      </p>
+    </div>
+  </div>
+</section>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
-            </li>
-          </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form> -->
-        </div>
-      </nav>
-      <!-- Endof Nav bar -->
-
-      <!-- main_content -->
-      <!-- <div class="long-banner">
-      <div class="overlay">
-        <img src="./media/birthday-2.jpeg" alt="long-banner-image" />
+<!-- About -->
+<!-- <section class="about bg-light">
+  <div class="container">
+    <div class="grid-2">
+      <div class="center">
+        <img
+        src="./media/kukies logo.png"
+        class="logo"
+        alt="Kukies cakes logo"
+      />
       </div>
-    </div> -->
-
-      <div class="main_content">
-        <div class="advert advert-1">
-          <h3>Birthday Cakes</h3>
-
-          <p>
-            ..you cannot afford to have a birthday without a birthday cake. All
-            favourite characters designs available for kids, PJ MASKS, SOFIA,
-            BARBIE, PAW PATROL and many others...
-          </p>
-        </div>
-        <div class="advert advert-2">
-          <h3>Wedding Cakes</h3>
-
-          <p>
-            ...explore our wedding gallery, we have a wide range of flavours
-            from chocolate cakes, fruit cakes, carrot cakes and canadian cakes
-            amoungst others. Make Your special day special with us.
-          </p>
-        </div>
-        <div class="advert advert-3">
-          <h3>Christmas Cakes</h3>
-
-          <p>
-            ...fruit cakes available to make that Christmas time and family time
-            much interesting.
-          </p>
-        </div>
-        <div class="advert advert-4">
-          <h3>Anniversary Cakes</h3>
-
-          <p>
-            Because when the day is a mark of something special, it has to be
-            filled with sweet joys. And, what else can be sweeter than a
-            delicious anniversary cake?
-          </p>
-        </div>
-        <div class="advert advert-5">
-          <h3>Baby Shower Cakes</h3>
-
-          <p>
-            ...fruit cakes available to make that Chrismas time and family time
-            much interesting.
-          </p>
-        </div>
-        <div class="advert advert-6">
-          <h3>Milestone Cakes</h3>
-
-          <p>
-            These types of cakes mark a special moment in anyone’s life. Whether
-            it is for a first birthday or for a retiree, these designs are very
-            unique and will never be forgotten. There is nothing more important
-            than celebrating each stepping stone in one’s life and what’s a
-            celebration without any cake?
-          </p>
-        </div>
+      <div>
+        <h3>About Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos
+          aperiam labore consectetur maiores ea magni exercitationem similique
+          laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur
+          explicabo consectetur consequatur non nesciunt debitis quos alias
+          soluta, ratione, ipsa officia reiciendis.
+        </p>
       </div>
     </div>
-    <!-- end of main_content -->
-    <footer id="main-footer">
-      <div class="social-icons">
-        <a href="https://www.facebook.com/kukiescakes/">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="https://wa.me/+27846833360/">
-          <i class="fa fa-whatsapp" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="sig">Copyright &copy; 2020 Kukies Cakes</div>
-    </footer>
-    <!-- optional scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+  </div>
+</section> -->
+
+<footer class="center bg-dark">
+  <p>Kukies Cakes &copy; 2020</p>
+</footer>

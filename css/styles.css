@@ -50,7 +50,7 @@ nav {
 
 /* Gallery */
 #gallery {
-  background: #5c1f5c;
+  background: #999;
 }
 .image {
   margin: 10px;
@@ -60,12 +60,12 @@ nav {
 }
 .image img {
   margin: 5px;
-  border: 1px solid lime;
+  border: 5px solid #fff;
   width: 100%;
 }
 .image img:hover {
   padding: 2px;
-  border: 3px solid #fff;
+  border: 3px solid lime;
   transition: all 0.2s ease-in;
 }
 .frame-3x3 img {
@@ -103,10 +103,11 @@ nav {
 }
 .about_content {
   text-align: center;
+  padding: 0.5rem;
   align-content: center;
   color: rgb(255, 255, 255);
 }
-.baker {
+/* .baker {
   position: relative;
   margin: auto;
   padding: 20px;
@@ -116,12 +117,13 @@ nav {
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0 15px 50px rgba(16, 253, 8, 0.2);
-}
-.baker-image {
+} */
+
+/* .baker-image {
   width: 200px;
   height: 200px;
   background: url(../media/thelma.JPG);
-  border-radius: 50%;
+  border-radius: 10%;
   float: left;
   shape-outside: circle();
   margin: 30px 20px 20px 0;
@@ -131,7 +133,7 @@ nav {
   padding: 0;
   text-align: justify;
   line-height: 22px;
-}
+} */
 
 .about_content h1 {
   font-size: 2rem;
@@ -168,29 +170,126 @@ nav {
   grid-area: advert6;
 }
 .advert_content .advert {
-  background: #404040;
+  /* max-width: 300px; */
+  background: rgba(0, 0, 0, 0.9);
   opacity: 0.8;
   padding: 0.5rem;
-  border-bottom: lime 5px solid;
+  border-bottom: #fff 5px solid;
 }
+
+.contact-info {
+  min-height: 200px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0.5rem;
+}
+
+.contact-me {
+  float: left;
+  text-align: left;
+
+  /* margin: 1rem; */
+  /* padding: 5px; */
+  justify-content: space-evenly;
+}
+.contact-info ul li {
+  padding: 10px;
+}
+.contact-info ul li a i {
+  color: #fff;
+  margin-right: 1em;
+  box-sizing: border-box;
+}
+
+.contact-info ul li a i:hover {
+  color: lime;
+  transition: all 0.2s ease-in;
+}
+
+.social-icons {
+  float: right;
+  color: #fff;
+  text-align: justify;
+}
+
 /* footer */
 #main-footer {
   margin-top: 0;
   text-align: center;
-  padding: 1rem;
-  background: darkmagenta;
+
+  background: #333;
   color: #fff;
-  height: 60px;
+  height: 73px;
 }
 
-.social-icons i {
-  margin: 0 20px;
-  color: #000;
-}
-.social-icons i:hover {
-  color: lime;
-  transition: all 0.2s ease-in;
-}
 .sig {
-  font-size: 12px;
+  padding: 1rem;
+  float: left;
+  font-size: 14px;
+}
+.author {
+  font-size: 10px;
+  padding: 0.5rem;
+  float: right;
+}
+.author-logo img {
+  padding: 5px;
+  width: 50px;
+  border-radius: 25px;
+}
+.author-logo {
+  float: right;
+}
+.author-info {
+  margin-top: 10px;
+  float: left;
+}
+.author-info a {
+  font-weight: bolder;
+  color: deepskyblue;
+}
+/* MEDIA QUERIES */
+/* Small Screens */
+@media all and (max-width: 560px) {
+  .contact-info {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-info .contact-me,
+  .social-icons {
+    text-align: center;
+  }
+  .contact-info h1 {
+    font-size: 15px;
+  }
+  .about_content h1 {
+    font-size: 20px;
+  }
+  .advert_content {
+    grid-template-areas:
+      "advert1"
+      "advert2"
+      "advert3"
+      "advert4"
+      "advert5"
+      "advert6";
+    grid-template-columns: 1fr;
+  }
+}
+
+/* medium screens */
+@media (max-width: 815px) {
+  .advert_content {
+    grid-template-areas:
+      "advert1 advert2"
+      "advert3 advert4"
+      "advert5 advert6";
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Landscape */
+@media (max-height: 500px) {
 }

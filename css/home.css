@@ -51,7 +51,7 @@ a {
 
 .content .title {
   font-family: "Dancing Script", cursive;
-  font-size: 2.8rem;
+  font-size: 3.8rem;
   margin-top: 1rem;
 }
 
@@ -96,12 +96,41 @@ a {
   color: #f4f4f4;
 }
 
-footer {
-  padding: 2.2rem;
+/* footer */
+#main-footer {
+  margin-top: 0;
+  text-align: center;
+
+  background: #333;
+  color: #fff;
+  height: 73px;
 }
 
-footer p {
-  margin: 0;
+.sig {
+  padding: 1rem;
+  float: left;
+  font-size: 14px;
+}
+.author {
+  font-size: 10px;
+  padding: 0.5rem;
+  float: right;
+}
+.author-logo img {
+  padding: 5px;
+  width: 50px;
+  border-radius: 25px;
+}
+.author-logo {
+  float: right;
+}
+.author-info {
+  margin-top: 10px;
+  float: left;
+}
+.author-info a {
+  font-weight: bolder;
+  color: deepskyblue;
 }
 
 /* Small Screens */
@@ -118,6 +147,10 @@ footer p {
   .content .logo {
     height: 140px;
     width: 140px;
+  }
+
+  .content .title {
+    font-size: 2.8rem;
   }
 
   .content .text {

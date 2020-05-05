@@ -7,11 +7,12 @@ body {
 a {
   color: #f4f4f4;
 }
+
 .showcase::after {
   content: "";
   height: 100vh;
   width: 100%;
-  background-image: url(../media/background1.jpeg);
+  background-image: url(../media/photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -36,7 +37,7 @@ a {
   z-index: 1;
   top: 10%;
   left: 50%;
-  margin-top: 105px;
+  margin-top: 10px;
   margin-left: -145px;
   width: 300px;
   height: 350px;
@@ -45,8 +46,8 @@ a {
 }
 
 .content .logo {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 
 .content .title {
@@ -66,6 +67,11 @@ a {
   overflow: hidden;
   padding: 4rem 1rem;
   text-align: center;
+}
+
+.container a:hover {
+  color: rgb(255, 121, 215);
+  transition: all 1000ms ease-in-out;
 }
 
 .grid-3 {
@@ -153,7 +159,8 @@ a {
     font-size: 2.8rem;
   }
 
-  .content .text {
+  .content .text,
+  .primary-text {
     display: none;
   }
 

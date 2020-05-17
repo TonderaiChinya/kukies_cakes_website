@@ -127,11 +127,11 @@
 }
 
 .nav-item.active {
-  border-bottom: 3px solid lime;
+  border-bottom: 3px solid #009603;
 }
 
 .nav-item:hover {
-  border-bottom: 3px solid lime;
+  border-bottom: 3px solid #009603;
 }
 
 nav {
@@ -157,9 +157,20 @@ nav {
 
 /* Gallery */
 #gallery {
-  background: #999;
+  background: #fff;
 }
+
 .image {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.ih-item {
+  margin-top: 20px;
+}
+
+/* .image {
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -172,7 +183,7 @@ nav {
 }
 .image img:hover {
   padding: 2px;
-  border: 3px solid lime;
+  border: 3px solid #009603;
   transition: all 0.2s ease-in;
 }
 .frame-3x3 img {
@@ -201,7 +212,7 @@ nav {
 .bg-light {
   background: #f4f4f4;
   color: #333;
-}
+} */
 
 /* About Page */
 #about {
@@ -294,7 +305,9 @@ nav {
 .map iframe {
   width: 100%;
 }
-
+.contact-section {
+  margin: 50px 0;
+}
 .contact-text h3 {
   color: #111111;
   font-weight: 700;

@@ -223,15 +223,22 @@ nav {
   line-height: 22px;
 } */
 
-.about_content h1 {
+#about h1 {
+  width: fit-content;
+  text-align: left;
+  padding: 10px;
   color: #000;
   font-size: 2rem;
   font-weight: bolder;
+  box-sizing: border-box;
+  border: 1px solid #000;
 }
 .advert_content {
   background: url(../media/about_background.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 2rem;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -323,10 +330,14 @@ nav {
 }
 
 .quotes .box:hover {
-  color: #f2f2f2;
+  color: #ffffff;
   box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
 }
-
+/* .quotes .box.ovl:hover {
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+} */
 .quotes .bg {
   position: absolute;
   top: 0;
@@ -343,31 +354,25 @@ nav {
 .quotes .box.box1:hover,
 .quotes .box.box1:hover {
   opacity: 1;
-  background: #e2a9e5;
-  background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
-  background: -webkit-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
-  background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+  background: url(../cakes/2x3-2.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .quotes .box.box2:hover,
 .quotes .box.box2:hover {
   opacity: 1;
-  background: #632c65;
-  background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
-  background: -webkit-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
-  background: linear-gradient(135deg, #632c65 15%, #56a5e2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
+  background: url(../cakes/2x3-10.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .quotes .box.box3:hover,
 .quotes .box.box3:hover {
   opacity: 1;
-  background: #4b384c;
-  background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
-  background: -webkit-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
-  background: linear-gradient(135deg, #4b384c 15%, #da5de2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+  background: url(../cakes/2x3-16.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*********************
@@ -583,6 +588,10 @@ nav {
   }
   .about_content h1 {
     font-size: 20px;
+  }
+  #about h1 {
+    margin: auto;
+    font-size: 1.5rem;
   }
 }
 
